@@ -120,12 +120,94 @@ class: center,middle,inverse
   - Combined with existing Meetup
 
 ---
-
 class: center, middle
 
-# What do you think this meetup should be?
+  # What do you think this meetup should be?
+---
+  ## The Holy Grail of Monitoring
 
+  .center[.middle[![knight](http://img4.wikia.nocookie.net/__cb20080328211709/indianajones/images/6/67/Knight.jpg)]]
 
+  .center[Choose wisely...]
+---
+  ## What do we mean by monitoring?
+
+  - System performance
+
+  - Application performance and exceptions
+
+  - Cloud performance cost
+
+  - Biz metrics
+
+##*with centralized alerting*
+---
+  ## Problems with typical monitoring systems
+
+  - Too many alerts, low signal-to-noise ratio
+
+  - Disparate systems don't integrate easily
+
+  - Data lacks sufficient granularity
+
+  - Unreliability can mean missing serious problems
+
+  - Cost (Saas per-server, developer time, maint. cost)
+---
+class: center, middle
+
+  # Likely Solution:
+
+  # Saas + DIY
+
+---
+
+  ## Saas tools
+
+  - Application & Uptime Monitoring
+
+    - New Relic / Scout / Pingdom
+
+  - Log Aggregation
+
+    - Loggly / Splunk Storm
+
+  - Cloud Metrics
+  
+    - Stackdriver / Datapipe
+
+  - Metrics Collection
+
+    - Librato
+
+  - Alerting
+  
+    - PagerDuty
+  
+    - Twilio
+
+---
+  ## DIY tools
+
+  - Metrics collection
+
+    - graphite / statsd / collectl / AWS CloudWatch
+
+  - Alerting
+
+    - nagios / sensu / AWS SNS
+
+  - Visualization
+
+    - rails / dashing / various javascript
+
+  - Event Propagation
+
+    - RabbitMQ / AWS SQS
+
+  - Long-term Metric Storage
+
+    - RDBMS / NoSQL / AWS S3
 
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.6.0.min.js" type="text/javascript">
