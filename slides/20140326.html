@@ -33,7 +33,7 @@
       code {
         -moz-border-radius: 5px;
         -web-border-radius: 5px;
-        background: #e7e8e2;
+        background: #000000;
         border-radius: 5px;
         font-size: 16px;
       }
@@ -209,6 +209,19 @@ class: center, middle
 
     - RDBMS / NoSQL / AWS S3
 
+---
+  ## K.I.S.S. at all costs
+
+  - Make it so easy to put data in, you have no excuse not to.
+
+  <code># send data upstream to statsd<br>
+  statsd=Statsd.new '127.0.0.1', 8125<br>
+  statsd.gauge('watermelon.vise.flexural_strength',5)</code>
+ 
+  <code># post a custom event to simpledb<br>
+  sdb.domains.create("oscillation_overthruster")<br>
+  domain.items.create SecureRandom.uuid, payload</code>
+ 
     </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-0.6.0.min.js" type="text/javascript">
     </script>
