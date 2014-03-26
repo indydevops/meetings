@@ -219,7 +219,7 @@ class: center, middle
   statsd.gauge('watermelon.vise.flexural_strength',5)</code>
  
   <code># post a custom event to simpledb<br>
-  sdb.domains.create("oscillation_overthruster")<br>
+  domain=sdb.domains.create("oscillation_overthruster")<br>
   domain.items.create SecureRandom.uuid, payload</code>
  
     </textarea>
